@@ -6,7 +6,7 @@ import androidx.room.*
 interface UsuarioDao {
 
     @Query("SELECT * FROM USUARIOS")
-    fun getAll(): List<Usuarios>
+    fun getAll(): List<Usuarios> 
 
     @Query("SELECT * FROM USUARIOS WHERE ID = :id")
     fun getById(id: Int): Usuarios
